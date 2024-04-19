@@ -18,7 +18,7 @@ public class Array_example04 {
 		
 		int lotto[] = new int[6]; //lotto 숫자 넣을 배열 생성
 		
-		for(int i=0; i<num; i++) { // 게임 갯수만큼 반복
+		for(int i=0; i<num; i++) { // 게임 수만큼 반복
 			for(int j = 0; j<6; j++) {	// 한 게임 당 랜덤 숫자 6개 발생
 				
 				//중복제거
