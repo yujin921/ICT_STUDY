@@ -11,6 +11,10 @@ public class Array_example02 {
 		do {
 			System.out.print("배열 크기 : ");
 			user = scan.nextInt();
+			
+			if(user<2) {
+				System.out.println("에러 발생");
+			}
 		}while(user<2);{}
 		
 		int arr[] = new int[user];
