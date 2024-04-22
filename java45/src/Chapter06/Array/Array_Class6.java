@@ -1,5 +1,5 @@
 package Chapter06.Array;
-
+//다시 올리기
 import java.util.Random;
 
 public class Array_Class6 {

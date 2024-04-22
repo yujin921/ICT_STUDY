@@ -1,5 +1,5 @@
 package Chapter07.Method;
-
+//다시 올리기
 public class MethodTest3 {
 	public static void main(String[] args) {
 		System.out.println("1~10 = " + calcSum(1,10));

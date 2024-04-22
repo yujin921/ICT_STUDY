@@ -1,5 +1,5 @@
 package Chapter06.Array;
-
+//다시 올리기
 public class Array_Class {
 	public static void main(String[] args) {
 		int[] arr1= new int[5];

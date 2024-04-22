@@ -1,5 +1,5 @@
 package Chapter06.Array;
-
+//다시 올리기
 public class Array_test2 {
 	public static void main(String[] args) {
 		int[] ary1 = {1, 2, 3, 4, 5};

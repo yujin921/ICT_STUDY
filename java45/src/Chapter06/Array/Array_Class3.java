@@ -1,5 +1,5 @@
 package Chapter06.Array;
-
+//다시 올리기
 public class Array_Class3 {
 	public static void main(String[] args) {
 		int[] score = {88,94,72,75,23};

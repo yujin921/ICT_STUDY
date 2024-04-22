@@ -1,5 +1,5 @@
 package Chapter07.Method;
-
+//다시 올리기
 public class MethodTest5 {
 	public static void main(String[] args) {
 		//가변 연자(variable arguments)

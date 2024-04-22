@@ -1,5 +1,5 @@
 package Chapter06.Array;
-
+//다시 올리기
 public class Array_test {
 	public static void main(String[] args) {
 		// Person 배열 선언 및 생성

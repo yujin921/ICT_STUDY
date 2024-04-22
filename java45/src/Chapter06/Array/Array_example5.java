@@ -2,7 +2,7 @@ package Chapter06.Array;
 
 import java.util.Random;
 import java.util.Scanner;
-
+//다시 올리기
 public class Array_example5 {
 	public static void main(String[] args) {
 		
