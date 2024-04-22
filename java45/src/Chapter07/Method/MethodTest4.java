@@ -1,4 +1,4 @@
-package Chapter06.Method;
+package Chapter07.Method;
 
 public class MethodTest4 {
 	public static void main(String[] args) {
