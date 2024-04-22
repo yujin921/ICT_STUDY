@@ -1,6 +1,6 @@
-package Chapter06.Array;
+package Chapter06.Method;
 
-public class Array_Class7 {
+public class MethodTest3 {
 	public static void main(String[] args) {
 		System.out.println("1~10 = " + calcSum(1,10));
 		System.out.println("15~100 = " + calcSum(2,5));

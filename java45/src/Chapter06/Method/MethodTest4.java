@@ -1,6 +1,6 @@
-package Chapter06.Array;
+package Chapter06.Method;
 
-public class Array_Class8 {
+public class MethodTest4 {
 	public static void main(String[] args) {
 		//메서드 호출부
 		method1();

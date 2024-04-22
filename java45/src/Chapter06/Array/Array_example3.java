@@ -2,16 +2,8 @@ package Chapter06.Array;
 
 import java.util.Scanner;
 
-public class Array_example02 {
+public class Array_example3 {
 	public static void main(String[] args) {
-		
-		//원하는 배열의 크기 입력
-		// 1이하일 경우 에러발생
-		// 2이상일 때 유저에게 배열값 입력받기
-		// 배열의 값 합계 구하기
-		
-		// 1차원 배열 : [0],[1],[2],[3]... 
-		
 		Scanner scan = new Scanner(System.in);
 		int user;
 		int sum = 0;
@@ -42,6 +34,6 @@ public class Array_example02 {
 			}
 		}
 		System.out.println(sum);
-		scan.close();
+
 	}
 }
