@@ -52,7 +52,7 @@ public class Theater_Method {
 				seats[row-1][col-1] =1;
 				
 			}else {
-				System.out.println("예약이 다찼습니다.");
+				System.out.printf("%d행 %d열은 예약된 좌석 입니다.\n",row,col);
 				i--;
 			}
 
