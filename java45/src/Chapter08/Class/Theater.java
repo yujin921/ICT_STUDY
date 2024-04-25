@@ -23,6 +23,7 @@ public class Theater {
 					System.exit(0);
 				default:
 					//입력 1,2,0이 아닐 경우 메시지를 출력하는 메서드
+					tm.Error();
 					break;
 			}
 		}
