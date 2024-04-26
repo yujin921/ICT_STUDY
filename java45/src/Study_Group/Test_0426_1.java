@@ -8,7 +8,7 @@ class Animal{
 	void sound() {
 		System.out.printf("나는 %s\n",name);
 	}
-}
+} 
 
 class Cat extends Animal{
 	String koe;
@@ -16,7 +16,9 @@ class Cat extends Animal{
 		super(name);
 		this.koe = koe;
 	}
+void Soun() {
 	
+}
 	@Override
 	void sound() {
 		System.out.printf("나는 %s %s~\n",name,koe);
@@ -29,7 +31,7 @@ class Tiger extends Animal{
 		super(name);
 		this.koe = koe;
 	}
-	
+		
 	@Override
 	void sound() {
 		System.out.printf("나는 %s다 %s~\n",name,koe);
