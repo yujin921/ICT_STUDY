@@ -94,13 +94,13 @@ class Novice {
 	
 	
 	void Skill() {
-		if(job == "기사") {
+		if(job.equals("기사")) {
 			System.out.println("강력한 배쉬 공격");
-		}else if(job =="도적") {
+		}else if(job.equals("도적")) {
 			System.out.println("쇼크 스턴");
-		}else if(job =="마법사") {
+		}else if(job.equals("마법사")) {
 			System.out.println("매직 애로우 공격");
-		}else if(job == "무직") {
+		}else if(job.equals("무직")) {
 			System.out.println("전직을 하지 않아 스킬을 사용할 수 없습니다.");
 		}
 	}
