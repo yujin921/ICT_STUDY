@@ -8,11 +8,10 @@ public class GameMain {
 		boolean inside = true;
 		boolean create = false;		
 		Novice novice = new Novice();
-		Menu menu = new Menu();
 		Scanner scan = new Scanner(System.in);
 		
 		while(inside) {
-			menu.OpenMenu();
+			novice.OpenMenu();
 			int num = scan.nextInt();
 			switch(num) {
 				case 1:

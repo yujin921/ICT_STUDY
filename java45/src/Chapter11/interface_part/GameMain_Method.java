@@ -19,14 +19,7 @@ import java.util.Scanner;
 * 8. - 종료를 선택하기 전까지 반복한다.
 * */
 
-class Menu{
-	void OpenMenu() {
-		System.out.println("==== ABCDE_RPG ====");
-		System.out.println("1. 캐릭터 생성 \n2. 캐릭터 정보 \n3. 전직하기 \n4. 기본 공격 \n5. 스킬 사용 \n0. 종료");
-		System.out.println("=====================");
-		System.out.print("번호를 선택하세요 : ");
-	}
-}
+
 class Novice {
 	int str;
 	int dex;
@@ -40,6 +33,13 @@ class Novice {
 		System.out.println("캐릭터를 생성합니다. ");
 		System.out.print("사용하실 아이디를 입력해 주세요 : ");
 		id = scan.nextLine();
+	}
+	
+	void OpenMenu() {
+		System.out.println("==== ABCDE_RPG ====");
+		System.out.println("1. 캐릭터 생성 \n2. 캐릭터 정보 \n3. 전직하기 \n4. 기본 공격 \n5. 스킬 사용 \n0. 종료");
+		System.out.println("=====================");
+		System.out.print("번호를 선택하세요 : ");
 	}
 	
 	void St() {
