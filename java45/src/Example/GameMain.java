@@ -17,41 +17,53 @@ import java.util.Scanner;
 * 7. - (0.종료)를 선택한 경우, 프로그램을 종료한다.
 * 8. - 종료를 선택하기 전까지 반복한다.
 * */
-public class Game1 {
+public class GameMain {
 	public static void main(String[] args) {
-		
-		boolean inside = true;
-		boolean create = false;
-		boolean st_final = false;
-		
-		Novice novice = new Novice();
+		GameMain_Method game = new GameMain_Method();
 		Scanner scan = new Scanner(System.in);
+		Novice novice = null;
 		
-		while(inside) {
-			System.out.println("==== ABCDE_RPG ====");
-			System.out.println("1. 캐릭터 생성 \n2. 캐릭터 정보 \n3. 전직하기 \n4. 공격하기 \n0. 종료");
-			System.out.println("=====================");
-			System.out.print("번호를 선택하세요 : ");
+		boolean systemon = true;
+		while(systemon) {
+			game.Menuopen();
 			int num = scan.nextInt();
 			switch(num) {
 				case 1:
+					novice = game.Create();
+					break;
 				case 2:
-					if(create == false) {
-						System.out.println("캐릭터를 생성하세요.");
+					if(novice == null) {
+						game.Create_Error();
 					}else {
-						novice.Novice_create();
-						while(st_final = false) {
-							novice.St();
-							System.out.printf("부여된 스탯 정보 : 힘[%d], 민첩[%d], 지능[%d] ",novice.str,
-									novice.dex, novice.intel);
-						}
-						
+						game.ChaInfo(novice);
 					}
+					break;
 				case 3:
+					if(novice == null) {
+						game.Create_Error();
+					}else {
+						novice = game.update(novice);
+					}
+					break;
 				case 4:
+					if(novice == null) {
+						game.Create_Error();
+					}else {
+						game.Attack(novice);
+					}
+					break;
+				case 5:
+					if(novice == null) {
+						game.Create_Error();
+					}else {
+						game.Skill(novice);
+					}
+					break;
 				case 0:
+					systemon = false;
 					System.exit(0);
 			}
 		}
+		
 	}
 }
