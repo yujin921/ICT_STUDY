@@ -10,7 +10,7 @@ class IDFormatException extends Exception { //예외 메세지를 호출하는 �
 
 public class IDFormatTest {
 	String userID;
-	public void checkUserID(String userID) throws IDFormatException {
+	public void checkUserID(String userID) throws IDFormatException { //여기는 무조건 IDFormatException 쓰기
 		// 사용자 정의 예외 클래스 IDFormatException 생성
 		// userID가 null일 경우
 		// => ERR " 아이디는 null일 수 없습니다." 출력
@@ -28,14 +28,27 @@ public class IDFormatTest {
 		System.out.println(userID);
 		
 	}
-	public static void main(String[] args) throws IDFormatException {
+	public static void main(String[] args){ 
 		Scanner scan = new Scanner(System.in);
 		IDFormatTest test = new IDFormatTest();
 		
 		System.out.print("ID : ");
 		String userID = scan.next();
-		test.checkUserID(userID);
+		try {
+			test.checkUserID(userID);
+		} catch (IDFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		scan.close();
+		
+		/* 선생님 코드 -> main은 try&catch 사용 多
+ 		 * try{
+		 *		test.checkUserID(userID);
+		 *} catch(IDFormatException e){
+		 *		System.out.println(e.getMessage());
+		 *}
+		 */
 	}
 
 }
