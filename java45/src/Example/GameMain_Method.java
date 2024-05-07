@@ -50,6 +50,10 @@ public class GameMain_Method {
 				String answer = scan.next();
 				if(answer.equals("n")) {
 					statcheck = true;
+				}else if(answer.equals("y")) {
+					statcheck = false;
+				}else {
+					System.out.println("잘못 입력했어요");
 				}
 				
 			}
