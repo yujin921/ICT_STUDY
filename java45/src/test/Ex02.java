@@ -68,6 +68,7 @@ public class Ex02 {
 				case 0 -> {
 					// 프로그램 종료(반복문 종료)
 					System.out.println("프로그램을 종료합니다. ");
+					scan.close();
 					System.exit(0);
 				}
 				default -> System.out.println("잘못 입력했습니다.");
